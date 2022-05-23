@@ -3,8 +3,8 @@ import photo from '../../Image/businessmen.png'
 
 const PartsInformation = () => {
     return (
-        <div className='mt-10'>
-            <div class="hero min-h-screen bg-base-200">
+        <div className='mt-10 bg-[#96e2e2]'>
+            <div class="hero min-h-screen ">
                 <div class="hero-content flex-col lg:flex-row">
                     <img src={photo} />
                     <div>

@@ -1,0 +1,30 @@
+[
+    {
+        "_id": 1,
+        "name": "Helmet",
+        "image": "https://ibb.co/d7FL8Bw",
+        "description": "Constructed with high quality EPS encased by PVC for top-tier protection. All Retrospec bike helmets are tested at a CPSC and EN lab for safety.",
+        "minimum quantity":"",
+        "available quantity":"",
+        "price ":"80$"
+      },
+    {
+        "_id": 2,
+        "name": "Tire",
+        "image": "https://ibb.co/72PvfmG",
+        "description": "Carbon steel bead allows tire to be folded without damage for easy storag Bell tires are ultra durable and made for adventure. The tires will stand the test of time, ride after ride.",
+        "minimum quantity":"",
+        "available quantity":"",
+        "price ":"60$"
+      },
+    {
+        "_id": 3,
+        "name": "Disc Brake",
+        "image": "https://ibb.co/PGwyVKR",
+        "description": "HYBRID BRAKE AND EASY TO INSTALL AND FIX-The Juin Tech F1 isn't a straightforward mechanical disc brake though, it's a hybrid or cable-operated hydraulic.",
+        "minimum quantity":"",
+        "available quantity":"",
+        "price ":"70$"
+      }
+    
+  ]

@@ -7,8 +7,8 @@ import tire from '../../Image/parts/tire.png'
 const Parts = () => {
     return (
         <div>
-            <h1 className='text-3xl font-bold text-[#0E172C] mb-12 text-center'>Motocycle Parts</h1>
-            <div className='grid grid-cols-1 lg:grid-cols-3 gap-5'>
+            <h1 className='text-3xl font-bold text-indigo-900 mb-12 text-center '>Motocycle Parts</h1>
+            <div className='grid grid-cols-1 lg:grid-cols-3 gap-5 '>
                 <PartsCard img={helmat}></PartsCard>
                 <PartsCard img={brake}></PartsCard>
                 <PartsCard img={tire}></PartsCard>
