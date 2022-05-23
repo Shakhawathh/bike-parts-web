@@ -2,9 +2,9 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <footer class="footer footer-center p-10 bg-[#272343] text-primary-content">
+        <footer class="footer footer-center p-10 bg-[#272343] text-primary-content mt-10">
   <div>
-    
+     
     <p class="font-bold">
       Moto Parts Manufacturer Ltd. 
       <br/>
