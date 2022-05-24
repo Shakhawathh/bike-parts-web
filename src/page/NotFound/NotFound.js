@@ -5,7 +5,7 @@ const NotFound = () => {
     return (
         <div>
 
-            <img src={Notfound} class="rounded-lg " />
+            <img src={Notfound} className="rounded-lg " />
 
         </div>
     );

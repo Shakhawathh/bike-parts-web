@@ -4,12 +4,12 @@ import photo from '../../Image/businessmen.png'
 const PartsInformation = () => {
     return (
         <div className='mt-10 bg-[#96e2e2]'>
-            <div class="hero min-h-screen ">
-                <div class="hero-content flex-col lg:flex-row">
+            <div className="hero min-h-screen ">
+                <div className="hero-content flex-col lg:flex-row">
                     <img src={photo} />
                     <div>
-                        <h1 class="text-5xl font-bold">Thank you for your purchase from Moto Parts</h1>
-                        <p class="py-6">Please let us know if we can do anything else to help!.</p>
+                        <h1 className="text-5xl font-bold">Thank you for your purchase from Moto Parts</h1>
+                        <p className="py-6">Please let us know if we can do anything else to help!.</p>
                     
                     </div>
                 </div>
