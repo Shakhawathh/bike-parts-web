@@ -1,21 +1,29 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 
 const Purchase = () => {
-    const {PartsCardId} = useParams()
+    const { PartsCardId } = useParams()
+    const [service,setService] = useState({})
 
-   
+
+    useEffect(() =>{
+        const url=``
+
+        fetch(url)
+        .then(res =>res.json())
+        .then(data => setService(data))
+    },[])
+    
+
+
     return (
         <div>
-            <h1 className='text-3xl font-bold text-indigo-900 mt-5 mb-5'>purchase</h1>
+            <h1 className='text-3xl font-bold text-indigo-900 mt-5 mb-5'>purchase:{PartsCardId}</h1>
             <div class="hero-content flex-col lg:flex-row">
-                <figure><img  class="max-w-sm w-50 rounded-lg shadow-2xl" alt="Album" /></figure>
+                <figure><img class="max-w-sm w-50 rounded-lg shadow-2xl" alt="Album" /></figure>
 
                 <div class="card-body">
                     <div class="form-control">
-
-                        
-
                         <label class="label">
                             <span class="label-text">Email</span>
                         </label>
@@ -23,14 +31,14 @@ const Purchase = () => {
                     </div>
                     <div class="form-control">
                         <label class="label">
-                            <span class="label-text">Name</span>
+                            <span class="label-text">Name:{PartsCardId.name}</span>
                         </label>
                         <input type="text" placeholder="name" class="input input-bordered w-full max-w-xs" />
                         <label class="label">
                             <span class="label-text">Product name</span>
                         </label>
                         <input type="text" placeholder="Product name" class="input input-bordered w-full max-w-xs" />
-                        
+
                         <label class="label">
                             <span class="label-text">Phone Number</span>
                         </label>
@@ -44,8 +52,8 @@ const Purchase = () => {
                         </label>
                         <input type="text" placeholder="quantity" class="input input-bordered w-full max-w-xs" />
 
-                        
-                        
+
+
                     </div>
                     <div class="form-control mt-6 w-full max-w-xs">
                         <button class="btn btn-primary">place order</button>

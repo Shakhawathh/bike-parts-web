@@ -4,8 +4,8 @@ import React from 'react';
 
 const Business = () => {
     return (
-        <div>  
-               <h1 className='text-3xl text-center font-bold mt-8 text-indigo-900'>Millions Business Trust Us </h1>
+        <div>
+            <h1 className='text-3xl text-center font-bold mt-8 text-indigo-900'>Millions Business Trust Us </h1>
 
 
             <div class="stats shadow mb-10 mt-10 mx-10    ">
