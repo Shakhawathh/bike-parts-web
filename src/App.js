@@ -9,6 +9,7 @@ import Dashboard from './page/Dashboard/Dashboard';
 import Purchase from './page/Purchase/Purchase';
 import NotFound from './page/NotFound/NotFound';
 import SignUp from './page/Login/SignUp';
+import RequireAuth from './page/Login/RequireAuth';
 
 
 function App() {
@@ -20,7 +21,10 @@ function App() {
         <Route path="/Blog" element={<Blog />} />
         <Route path="Portfolio" element={<Portfolio />} />
         <Route path="Dashboard" element={<Dashboard />} />
-        <Route path="PartsCard/:PartsCardId" element={<Purchase />} />
+        <Route path="Purchase" element={
+        <RequireAuth>
+          <Purchase/>
+        </RequireAuth>} />
         <Route path="Login" element={<Login />} />
         <Route path="Signup" element={<SignUp />} />
         <Route path='*' element={<NotFound />} />

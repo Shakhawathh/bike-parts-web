@@ -1,12 +1,10 @@
 import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link,  } from 'react-router-dom';
 
-const PartsCard = ({ service ,setBooking }) => {
+const PartsCard = ({ service}) => {
   const {_id, name, img, description, min, available_quantity, price } = service
-  const navigate = useNavigate()
-  const purchaseButton = _id =>{
-   navigate(`/PartsCard/${_id}`)
-  }
+
+  
   return (
     <div className="card  w-96 bg-[#96e2e2] shadow-xl ">
       <figure><img className='w-60' src={img} alt="" /></figure>
@@ -18,7 +16,7 @@ const PartsCard = ({ service ,setBooking }) => {
         <p><span className='text-xl font-semibold text-right '>Per unit price</span>: ${price}</p>
         <div className=" mt-2 mr-2 justify-center ">
           <button
-          onClick={()=>purchaseButton(_id)}
+        
           className="btn bg-[#001858] text-white"><Link to='/Purchase'>Buy Now</Link></button>
         </div>
       </div>

@@ -1,24 +1,28 @@
 import React, { useEffect, useState } from 'react';
+import { useAuthState } from 'react-firebase-hooks/auth';
 import { useParams } from 'react-router-dom';
+import auth from '../../firebase.init';
 
 const Purchase = () => {
-    const { PartsCardId } = useParams()
-    const [service,setService] = useState({})
+    // const { PartsCardId } = useParams()
+    // const [service,setService] = useState({})
 
 
-    useEffect(() =>{
-        const url=`http://localhost:5000/service/${PartsCardId}`
+    // useEffect(() =>{
+    //     const url=`http://localhost:5000/service/${PartsCardId}`
 
-        fetch(url)
-        .then(res =>res.json())
-        .then(data => setService(data))
-    },[])
+    //     fetch(url)
+    //     .then(res =>res.json())
+    //     .then(data => setService(data))
+    // },[])
+
+    const [user, loading, error] = useAuthState(auth);
     
 
 
     return (
         <div>
-            <h1 className='text-3xl font-bold text-indigo-900 mt-5 mb-5'>purchase:{PartsCardId}</h1>
+            <h1 className='text-3xl font-bold text-indigo-900 mt-5 mb-5'>purchase:</h1>
             <div className="hero-content flex-col lg:flex-row">
                 <figure><img className="max-w-sm w-50 rounded-lg shadow-2xl" alt="Album" /></figure>
 
@@ -27,13 +31,13 @@ const Purchase = () => {
                         <label className="label">
                             <span className="label-text">name</span>
                         </label>
-                        <input type="text" placeholder="name" className="input input-bordered w-full max-w-xs" />
+                        <input type="text" disabled value={user?.displayName || ''} className="input input-bordered w-full max-w-xs" />
                     </div>
                     <div className="form-control">
                         <label className="label">
                             <span className="label-text">email:{}</span>
                         </label>
-                        <input type="text" placeholder="email" className="input input-bordered w-full max-w-xs" />
+                        <input type="text"  disabled value={user?.email || ''} className="input input-bordered w-full max-w-xs" />
                         <label className="label">
                             <span className="label-text">Product name</span>
                         </label>
