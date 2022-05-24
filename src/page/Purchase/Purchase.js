@@ -7,7 +7,7 @@ const Purchase = () => {
 
 
     useEffect(() =>{
-        const url=``
+        const url=`http://localhost:5000/service/${PartsCardId}`
 
         fetch(url)
         .then(res =>res.json())
@@ -25,15 +25,15 @@ const Purchase = () => {
                 <div class="card-body">
                     <div class="form-control">
                         <label class="label">
-                            <span class="label-text">Email</span>
+                            <span class="label-text">name</span>
                         </label>
-                        <input type="text" placeholder="email" class="input input-bordered w-full max-w-xs" />
+                        <input type="text" placeholder="name" class="input input-bordered w-full max-w-xs" />
                     </div>
                     <div class="form-control">
                         <label class="label">
-                            <span class="label-text">Name:{PartsCardId.name}</span>
+                            <span class="label-text">email:{}</span>
                         </label>
-                        <input type="text" placeholder="name" class="input input-bordered w-full max-w-xs" />
+                        <input type="text" placeholder="email" class="input input-bordered w-full max-w-xs" />
                         <label class="label">
                             <span class="label-text">Product name</span>
                         </label>
