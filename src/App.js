@@ -8,6 +8,7 @@ import Portfolio from './page/Home/Portfolio';
 import Dashboard from './page/Dashboard/Dashboard';
 import Purchase from './page/Purchase/Purchase';
 import NotFound from './page/NotFound/NotFound';
+import SignUp from './page/Login/SignUp';
 
 
 function App() {
@@ -17,10 +18,11 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Blog" element={<Blog />} />
-        <Route path="/Portfolio" element={<Portfolio />} />
-        <Route path="/Dashboard" element={<Dashboard />} />
-        <Route path="/PartsCard/:PartsCardId" element={<Purchase />} />
-        <Route path="/Login" element={<Login />} />
+        <Route path="Portfolio" element={<Portfolio />} />
+        <Route path="Dashboard" element={<Dashboard />} />
+        <Route path="PartsCard/:PartsCardId" element={<Purchase />} />
+        <Route path="Login" element={<Login />} />
+        <Route path="Signup" element={<SignUp />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
     </div>
