@@ -2,7 +2,7 @@ import React from 'react';
 
 const Blog = () => {
     return (
-        <div className='text-left'>
+        <div className='text-left bg-[#BAE8E8]'>
 
             <h1 className='text-2xl font-bold'> 1: How will you improve the performance of a React Application?</h1>
             <br />
