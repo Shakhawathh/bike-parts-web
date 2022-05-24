@@ -8,10 +8,10 @@ const Business = () => {
                <h1 className='text-3xl text-center font-bold mt-8 text-indigo-900'>Millions Business Trust Us </h1>
 
 
-            <div class="stats shadow mb-10 mt-10 mx-10  ">
+            <div class="stats shadow mb-10 mt-10 mx-10    ">
 
-                <div class="stat gap-5">
-                    <div class="stat-figure text-primary">
+                <div class="stat gap-5 ">
+                    <div class="stat-figure text-primary  ">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-8 h-8 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
                     </div>
                     <div class="stat-title font-extrabold text-blue-700	text-2xl"> Annual revenue</div>

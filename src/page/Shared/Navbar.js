@@ -8,7 +8,7 @@ const Navbar = () => {
         <li><Link to='/Blog'>Blog</Link></li>
         <li><Link to='/Portfolio'>My Portfolio</Link></li>
         <li><Link to='/Dashboard'>Dashboard</Link></li>
-        <li><Link to='/Dashboard'>Purchase  </Link></li>
+        <li><Link to='Purchase'>Purchase </Link></li>
         <li><Link to='/Login'>Login</Link></li>
        
     </>
@@ -24,7 +24,7 @@ const Navbar = () => {
                         {navbarItems}
                     </ul>
                 </div>
-                <a className="btn btn-ghost normal-case text-xl">Moto Parts</a>
+                <a className="btn btn-ghost normal-case text-xl font-normal hover:font-bold"><Link to='/'>Moto Parts</Link></a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal p-0">
