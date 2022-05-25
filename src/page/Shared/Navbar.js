@@ -17,13 +17,12 @@ const Navbar = () => {
         <li><Link to='/'>Home</Link></li>
         <li><Link to='/Blog'>Blog</Link></li>
         <li><Link to='/Portfolio'>My Portfolio</Link></li>
-        <li><Link to='/Purchase'>purchase</Link></li>
         <li><Link to='/Dashboard'>Dashboard</Link></li>
         <li>{user ? <button className="btn btn-ghost text-bold"  onClick={logout} >Sign Out</button> : <Link to="/login">Login</Link>}</li>
        
     </>
     return (
-        <div  className=''>
+        <div >
             <div className="navbar bg-[#51e1e1] text-dark font-bold ">
             <div className="navbar-start">
                 <div className="dropdown ">

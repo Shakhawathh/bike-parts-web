@@ -10,6 +10,10 @@ import Purchase from './page/Purchase/Purchase';
 import NotFound from './page/NotFound/NotFound';
 import SignUp from './page/Login/SignUp';
 import RequireAuth from './page/Login/RequireAuth';
+import Footer from './page/Home/Footer';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 
 function App() {
@@ -21,7 +25,7 @@ function App() {
         <Route path="/Blog" element={<Blog />} />
         <Route path="Portfolio" element={<Portfolio />} />
         <Route path="Dashboard" element={<Dashboard />} />
-        <Route path="Purchase" element={
+        <Route path="/PartsCard/:PartsCardId" element={
         <RequireAuth>
           <Purchase/>
         </RequireAuth>} />
@@ -29,6 +33,8 @@ function App() {
         <Route path="Signup" element={<SignUp />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
+      <Footer></Footer>
+      <ToastContainer />
     </div>
   );
 }
