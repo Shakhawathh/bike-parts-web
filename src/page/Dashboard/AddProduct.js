@@ -9,7 +9,7 @@ const AddProduct = () => {
     const onSubmit = async data => {
         
         console.log('data',data);
-        const url = `http://localhost:5000/service`
+        const url = `https://young-beyond-90942.herokuapp.com/service`
         fetch(url,{
             method:'POST',
             headers: {

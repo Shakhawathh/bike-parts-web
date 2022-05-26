@@ -12,7 +12,7 @@ const Purchase = () => {
 
     const onSubmit = data => {
         console.log(data)
-        fetch('http://localhost:5000/booking',{
+        fetch('https://young-beyond-90942.herokuapp.com/booking',{
             method: 'POST',
             headers: {
                 'content-type':'application/json'
@@ -41,7 +41,7 @@ const Purchase = () => {
 
 
     useEffect(() => {
-        const url = `http://localhost:5000/service/${PartsCardId}`
+        const url = `https://young-beyond-90942.herokuapp.com/service/${PartsCardId}`
 
         fetch(url)
             .then(res => res.json())
