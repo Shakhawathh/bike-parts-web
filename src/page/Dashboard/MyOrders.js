@@ -50,7 +50,7 @@ const MyOrders = () => {
                             <th>Name</th>
                             <th>product-Quantity</th>
                             <th>Payment</th>
-                            <th>delete</th>
+                           
                         </tr>
                     </thead>
                     <tbody>
@@ -59,7 +59,7 @@ const MyOrders = () => {
                                 <th>{index + 1}</th>
                                 <td>{o.name}</td>
                                 <td>{o.quantity}</td>
-                                <td>{ }</td>
+                                <td><button  class="btn btn-xs bg-[#001858]">pay</button></td>
                             </tr>)
                         }
 
