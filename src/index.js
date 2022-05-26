@@ -5,9 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import {
-  useQuery,
-  useMutation,
-  useQueryClient,
+  
   QueryClient,
   QueryClientProvider,
 } from 'react-query'

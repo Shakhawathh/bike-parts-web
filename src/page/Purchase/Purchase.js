@@ -36,7 +36,7 @@ const Purchase = () => {
     const { PartsCardId } = useParams()
 
     const [service, setService] = useState({})
-    const [user, loading, error] = useAuthState(auth)
+    const [user] = useAuthState(auth)
 
 
 
@@ -63,7 +63,7 @@ const Purchase = () => {
                     <p> Description:{service.description}</p>
                     <p>Per unit Price: ${service.price}</p>
                     <p> Available quantity :{service.available_quantity}</p>
-                    <p></p>
+                    <p>Min-order :{service.min}</p>
                 </div>
             </div>
             <div>
@@ -83,7 +83,7 @@ const Purchase = () => {
                 <input className='bg-slate-100 text-dark' placeholder="quantity" type="number"  {...register("quantity" , { min:60 , max: 3000 })} />
                 <br/>
                 <span>price</span>
-                <input className='bg-slate-100 text-dark'  value={service.price}  type="number" {...register("price")} />
+                <input className='bg-slate-100 text-dark'  value={service?.price || ''}  type="text" {...register("price")} />
                 <br/>
                 <input className='bg-indigo-700 text-white' type="submit"  value="order"/>
             </form>
