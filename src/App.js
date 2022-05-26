@@ -16,6 +16,8 @@ import 'react-toastify/dist/ReactToastify.css';
 import MyOrders from './page/Dashboard/MyOrders';
 import AddReview from './page/Dashboard/AddReview';
 import MyProfile from './page/Dashboard/MyProfile';
+import ManageProducts from './page/Dashboard/ManageProducts';
+import MakeAdmin from './page/Dashboard/MakeAdmin';
 
 
 
@@ -34,6 +36,8 @@ function App() {
           <Route index element={<MyOrders></MyOrders>}></Route>
           <Route path='AddReview' element={<AddReview></AddReview>}></Route>
           <Route path='MyProfile' element={<MyProfile></MyProfile>}></Route>
+          <Route path='ManageProducts' element={<ManageProducts></ManageProducts>}></Route>
+          <Route path='MakeAdmin' element={<MakeAdmin></MakeAdmin>}></Route>
 
         </Route>
         <Route path="/PartsCard/:PartsCardId" element={
