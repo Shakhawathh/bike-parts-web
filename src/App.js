@@ -18,6 +18,7 @@ import AddReview from './page/Dashboard/AddReview';
 import MyProfile from './page/Dashboard/MyProfile';
 import ManageProducts from './page/Dashboard/ManageProducts';
 import MakeAdmin from './page/Dashboard/MakeAdmin';
+import AddProduct from './page/Dashboard/AddProduct';
 
 
 
@@ -38,6 +39,7 @@ function App() {
           <Route path='MyProfile' element={<MyProfile></MyProfile>}></Route>
           <Route path='ManageProducts' element={<ManageProducts></ManageProducts>}></Route>
           <Route path='MakeAdmin' element={<MakeAdmin></MakeAdmin>}></Route>
+          <Route path='AddProduct' element={<AddProduct></AddProduct>}></Route>
 
         </Route>
         <Route path="/PartsCard/:PartsCardId" element={
