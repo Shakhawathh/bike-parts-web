@@ -142,7 +142,7 @@ const MyProfile = () => {
                 
 
 
-                <input className='btn w-full max-w-xs text-white bg-[#001858] text-left' type="submit" value="Add Product" />
+                <input className='btn w-full max-w-xs text-white bg-[#001858] text-left' type="submit" value="update profile" />
             </form>
         </div>
     );
