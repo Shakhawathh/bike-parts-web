@@ -105,6 +105,11 @@ const Login = () => {
                     onClick={() => signInWithGoogle()}
                     className="btn btn-outline bg-[#001858] text-white"
                 >Continue with Google</button>
+                <div>
+                    <h3>Admin</h3>
+                    <p>Email:sunny@gmail.com</p>
+                    <p>Password:123456</p>
+                </div>
             </div>
         </div>
     </div >

@@ -38,7 +38,7 @@ const Reply = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="text-center lg:text-left">
+                    <div className="text-center lg:text-left text-black">
                         <h1 className="text-5xl font-bold">Leave a Reply</h1>
                         <p className="py-6">Your email address will not be published. Required fields are marked *.</p>
                     </div>

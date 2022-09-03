@@ -10,11 +10,11 @@ const PartsCard = ({ service}) => {
   }
   
   return (
-    <div className="card  w-96 bg-[#96e2e2] shadow-xl ">
+    <div className="card  w-96 shadow-2xl text-black  mx-auto">
       <figure><img className='w-60' src={img} alt="" /></figure>
-      <div className="text-justify mx-4 mt-1">
+      <div className="text-justify mx-4 mt-1 px-2">
         <h2 className="card-title"><span className='text-xl font-semibold text-right '>Name:</span>{p_name}</h2>
-        <p><span className='text-xl font-semibold text-right '>Description:</span> {description}</p>
+        <p><span className='text-xl font-semibold text-right whitespace-normal pt-2 '>Description:</span> {description}</p>
         <p><span className='text-xl font-semibold text-right '>Minium order:</span> {min}</p>
         <p><span className='text-xl font-semibold text-right '>Available:</span> {available_quantity}</p>
         <p><span className='text-xl font-semibold text-right '>Per unit price</span>: ${price}</p>

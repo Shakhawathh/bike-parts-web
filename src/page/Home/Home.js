@@ -9,7 +9,7 @@ import Review from './Review';
 
 const Home = () => {
     return (
-        <div className='  bg-[#BAE8E8]'>
+        <div className='bg-white'>
             <Banner></Banner>
             <Parts></Parts>
             <Business></Business>
