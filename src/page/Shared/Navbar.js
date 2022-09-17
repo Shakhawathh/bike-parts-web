@@ -19,14 +19,14 @@ const Navbar = () => {
         <li><Link to='/Blog'>Blog</Link></li>
        
         {
-            user && <li><Link to='/Dashboard'>Dashboard</Link></li>
+            user && <li><Link className='text-black font-bold' to='/Dashboard'>Dashboard</Link></li>
         }
 
-        <li>{user ? <button className="btn btn-ghost text-bold" onClick={logout} >Sign Out</button> : <Link to="/login">Login</Link>}</li>
+        <li>{user ? <button className="btn btn-ghost text-bold text-black font-bold" onClick={logout} >Sign Out</button> : <Link to="/login">Login</Link>}</li>
 
     </>
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar fixed top-0 w-full z-50 lg:px-10  bg-base-100 bg-opacity-30 backdrop-filter backdrop-blur-lg  border-neutral text-black font-bold">
         <div className="navbar-start">
             <div className="dropdown">
                 <label tabIndex="0" className="btn btn-ghost lg:hidden">
@@ -36,7 +36,12 @@ const Navbar = () => {
                     {navbarItems}
                 </ul>
             </div>
-            <a className="btn btn-ghost normal-case text-xl">Moto Parts</a>
+            <Link to="/">
+          
+          <a  className="btn btn-ghost normal-case text-xl">Moto Parts</a>
+          
+        </Link>
+            
         </div>
         <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal p-0">

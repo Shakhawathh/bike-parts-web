@@ -26,7 +26,8 @@ function App() {
     <div className="App">
       <Navbar></Navbar>
       <Routes>
-        <Route path="/" element={<Home />} />
+        
+        <Route path="/" element={<Home />} /> 
         <Route path="/Blog" element={<Blog />} />
         <Route path="Dashboard" element={
           <RequireAuth>

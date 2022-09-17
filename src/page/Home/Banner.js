@@ -1,12 +1,11 @@
 import React from 'react';
-import banner from '../../Image/bike.jpg'
 
 const Banner = () => {
     return (
         <div>
             <div className="carousel w-full mb-12">
                 <div id="item1" className="carousel-item w-full">
-                    <img className="w-full" src={banner} alt="bike" />
+                    <img className="w-full" src="https://i.ibb.co/3rR2H6V/bike.jpg" alt="bike" />
                     
                 </div>
                 
