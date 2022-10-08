@@ -1,46 +1,65 @@
-import React from 'react';
-
-
+import React from "react";
 
 const Business = () => {
-    return (
-        <div>
-            <h1 className='text-3xl text-center font-bold mt-8 text-indigo-900'>Millions Business Trust Us </h1>
+  return (
+    <div>
+      <section class="py-10 bg-gray-100 sm:py-16 lg:py-24">
+        <div class="max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
+          <div class="max-w-2xl mx-auto text-center">
+            <h2 class="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
+              Numbers tell our Business
+            </h2>
+            <p class="mt-3 text-xl leading-relaxed text-gray-600 md:mt-8">
+              Our Business Goal.
+            </p>
+          </div>
 
-
-            <div className="stats shadow mb-10 mt-10 mx-10    ">
-
-                <div className="stat gap-5 ">
-                    <div className="stat-figure text-primary  ">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-8 h-8 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-                    </div>
-                    <div className="stat-title font-extrabold text-blue-700	text-2xl"> Annual revenue</div>
-                    <div className="stat-value text-indigo-900	"> 120M+</div>
-
-                </div>
-
-
-                <div className="stat ">
-                    <div className="stat-figure text-primary ">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-8 h-8 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" strokeWidth="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path></svg>
-                    </div>
-                    <div className="stat-title font-extrabold text-2xl text-blue-700	"> customers</div>
-                    <div className="stat-value text-indigo-900	">100+</div>
-
-                </div>
-                <div className="stat">
-                    <div className="stat-figure text-primary">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-8 h-8 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" strokeWidth="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
-                    </div>
-                    <div className="stat-title  font-extrabold text-2xl text-blue-700"> Reviews</div>
-                    <div className="stat-value  text-indigo-900	">33K</div>
-
-                </div>
-
-
+          <div class="grid grid-cols-1 gap-8 mt-10 text-center lg:mt-24 sm:gap-x-8 md:grid-cols-3">
+            <div>
+              <h3 class="font-bold text-7xl">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-600 to-blue-600">
+                  {" "}
+                  6+{" "}
+                </span>
+              </h3>
+              <p class="mt-4 text-xl font-medium text-gray-900">
+                Years in business
+              </p>
+              <p class="text-base mt-0.5 text-gray-500">
+                Creating the successful path
+              </p>
             </div>
+
+            <div>
+              <h3 class="font-bold text-7xl">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-600 to-blue-600">
+                  {" "}
+                  4821{" "}
+                </span>
+              </h3>
+              <p class="mt-4 text-xl font-medium text-gray-900">
+                World Wide Sells
+              </p>
+              <p class="text-base mt-0.5 text-gray-500">In last 6 years</p>
+            </div>
+
+            <div>
+              <h3 class="font-bold text-7xl">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-600 to-blue-600">
+                  {" "}
+                  37+{" "}
+                </span>
+              </h3>
+              <p class="mt-4 text-xl font-medium text-gray-900">Products</p>
+              <p class="text-base mt-0.5 text-gray-500">
+                Working for your success
+              </p>
+            </div>
+          </div>
         </div>
-    );
+      </section>
+    </div>
+  );
 };
 
 export default Business;

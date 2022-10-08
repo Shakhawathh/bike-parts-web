@@ -4,9 +4,9 @@ const Reply = () => {
     return (
         <div>
             <div className="hero min-h-screen  mt-10 ">
-                <div className="hero-content flex-col lg:flex-row-reverse">
+                <div className="hero-content flex-col lg:flex-row-reverse gap-24">
                     
-                    <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100 bg-[#FFD803]">
+                    <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-slate-300 ">
                         <div className="card-body">
                             <div className="form-control ">
                                 <label className="label">
