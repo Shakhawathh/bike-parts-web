@@ -4,7 +4,7 @@ const Banner = () => {
   return (
     <div>
       <div class="bg-gradient-to-b from-green-50 to-green-100">
-        {/* <header class="">
+        <header class="">
           <div class="px-4 mx-auto sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16 lg:h-20">
               <div class="flex-shrink-0">
@@ -112,7 +112,7 @@ const Banner = () => {
               </div>
             </div>
           </div>
-        </header> */}
+        </header>
 
         <section class="py-10 sm:py-16 lg:py-24">
           <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
@@ -180,7 +180,7 @@ const Banner = () => {
               <div>
                 <img
                   class="w-full"
-                  src="https://cdn.rareblocks.xyz/collection/celebration/images/hero/2/hero-img.png"
+                  src="https://i.ibb.co/M75Qmdw/Motocross-bro.png"
                   alt=""
                 />
               </div>
