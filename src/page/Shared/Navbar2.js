@@ -78,49 +78,41 @@ const Navbar2 = () => {
             <div class="flex-shrink-0">
               <a href="#" title="" class="flex">
                 <img
-                  class="w-auto h-8"
+                  class=" w-auto h-8"
                   src="https://cdn.rareblocks.xyz/collection/celebration/images/hero/2/logo.svg"
                   alt=""
                 />
               </a>
             </div>
 
-            <button
-              type="button"
-              class="inline-flex p-1 text-black transition-all duration-200 border border-black lg:hidden focus:bg-gray-100 hover:bg-gray-100"
-            >
-              <svg
-                class="block w-6 h-6"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              </svg>
+            <div className="">
+              <div className="dropdown dropdown-end">
+                <label tabIndex="0" className="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M4 6h16M4 12h8m-8 6h16"
+                    />
+                  </svg>
+                </label>
+                <ul
+                  tabIndex="0"
+                  className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-gradient-to-b from-green-50 to-green-50 gap-2 rounded-box w-52"
+                >
+                  {navbarItems}
+                </ul>
+              </div>
+            </div>
 
-              <svg
-                class="hidden w-6 h-6"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M6 18L18 6M6 6l12 12"
-                ></path>
-              </svg>
-            </button>
-
-            <div class="hidden ml-auto lg:flex lg:items-center lg:justify-center lg:space-x-10 ">
+            <div class="hidden ml-auto  lg:flex lg:items-center lg:justify-center lg:space-x-10 ">
               {navbarItems}
             </div>
           </div>

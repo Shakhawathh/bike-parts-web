@@ -1,29 +1,49 @@
-import React from 'react';
-import { Link, useNavigate,  } from 'react-router-dom';
+import React from "react";
+import { Link, useNavigate } from "react-router-dom";
 
-const PartsCard = ({ service}) => {
-  const {_id, p_name, img, description, min, available_quantity, price } = service
-  const navigate = useNavigate()
+const PartsCard = ({ service }) => {
+  const { _id, p_name, img, description, min, available_quantity, price } =
+    service;
+  const navigate = useNavigate();
 
-  const navigateToPurchase = id =>{
-    navigate(`/PartsCard/${id}`)
-  }
-  
+  const navigateToPurchase = (id) => {
+    navigate(`/PartsCard/${id}`);
+  };
+
   return (
-    <div className="card  w-96 shadow-2xl text-black  mx-auto">
-      <figure><img className='w-60' src={img} alt="" /></figure>
-      <div className="text-justify mx-4 mt-1 px-2">
-        <h2 className="card-title"><span className='text-xl font-semibold text-right '>Name:</span>{p_name}</h2>
-        <p><span className='text-xl font-semibold text-right whitespace-normal pt-2 '>Description:</span> {description}</p>
-        <p><span className='text-xl font-semibold text-right '>Minium order:</span> {min}</p>
-        <p><span className='text-xl font-semibold text-right '>Available:</span> {available_quantity}</p>
-        <p><span className='text-xl font-semibold text-right '>Per unit price</span>: ${price}</p>
-        <div className=" mt-2 mr-2 justify-center ">
+    <div>
+      <a href="#" class="relative block border border-gray-100">
+        <img alt="Toy" src={img} />
+
+        <div class="p-6">
+          <p class="text-sm font-medium text-gray-600">{price}$</p>
+
+          <h5 class="mt-1 text-lg font-bold">{p_name}</h5>
+
           <button
-          onClick={() => navigateToPurchase(_id)}
-          className="btn bg-[#001858] text-white"><Link to='/Purchase'>Buy Now</Link></button>
+            name="add"
+            type="button"
+            class="mt-4 flex w-full items-center justify-center rounded-sm bg-[#4ADE80] px-8 py-4"
+          >
+            <span class="text-sm font-medium"> Add to Cart </span>
+
+            <svg
+              class="ml-1.5 h-5 w-5"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
+              />
+            </svg>
+          </button>
         </div>
-      </div>
+      </a>
     </div>
   );
 };
