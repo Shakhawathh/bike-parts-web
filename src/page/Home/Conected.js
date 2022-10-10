@@ -27,7 +27,7 @@ const Conected = () => {
               <a
                 href="#"
                 title=""
-                class="inline-flex items-center justify-center px-8 py-4 font-semibold text-white transition-all duration-200 bg-blue-600 rounded-md mt-9 hover:bg-blue-700 focus:bg-blue-700"
+                class="inline-flex items-center justify-center px-8 py-4 font-semibold text-white transition-all duration-200 bg-[#001858] rounded-md mt-9 hover:bg-blue-700 focus:bg-blue-700"
                 role="button"
               >
                 {" "}

@@ -13,7 +13,11 @@ const PartsCard = ({ service }) => {
   return (
     <div>
       <a href="#" class="relative block border border-gray-100">
-        <img alt="Toy" src={img} />
+        <img
+          className="hover:scale-110 transform transition duration-500"
+          alt="Toy"
+          src={img}
+        />
 
         <div class="p-6">
           <p class="text-sm font-medium text-gray-600">{price}$</p>
@@ -25,7 +29,7 @@ const PartsCard = ({ service }) => {
             type="button"
             class="mt-4 flex w-full items-center justify-center rounded-sm bg-[#4ADE80] px-8 py-4"
           >
-            <span class="text-sm font-medium"> Add to Cart </span>
+            <span class="text-sm font-medium"> Buy Now </span>
 
             <svg
               class="ml-1.5 h-5 w-5"

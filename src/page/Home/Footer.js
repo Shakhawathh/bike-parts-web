@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer>
       <div>
-        <section class="py-10 bg-[#272343] text-white sm:pt-16 lg:pt-24">
+        <div class="py-10 bg-[#001858] text-white sm:pt-16 lg:pt-24 ">
           <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
             <div class="grid grid-cols-2 md:grid-cols-4 gap-y-12 gap-x-12">
               <div>
@@ -212,10 +212,10 @@ const Footer = () => {
               </div>
             </div>
 
-            <div class="mt-20 md:mt-28 2xl:mt-32">
+            <div class="mt-20  md:mt-28 2xl:mt-32 ">
               <div class="lg:flex lg:items-center lg:justify-between">
                 <div class="sm:flex sm:items-center sm:justify-start sm:space-x-8">
-                  <ul class="flex items-center justify-start space-x-8">
+                  <ul class="flex items-center justify-start space-x-8 mx-20 lg:mx-0">
                     <li>
                       <a
                         href="#"
@@ -333,7 +333,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-        </section>
+        </div>
       </div>
     </footer>
   );

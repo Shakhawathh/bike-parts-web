@@ -1,11 +1,9 @@
 import React from "react";
-import Navbar2 from "../Shared/Navbar2";
-
 const Banner = () => {
   return (
     <div>
       <div class="bg-gradient-to-b from-green-50 to-green-100">
-        <section class="py-10 sm:py-16 lg:py-24">
+        <div class="py-10 sm:py-16 lg:py-24">
           <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
             <div class="grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
               <div>
@@ -76,7 +74,7 @@ const Banner = () => {
               </div>
             </div>
           </div>
-        </section>
+        </div>
       </div>
     </div>
   );
