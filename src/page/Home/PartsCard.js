@@ -26,6 +26,7 @@ const PartsCard = ({ service }) => {
 
           <button
             name="add"
+            onClick={() => navigateToPurchase(_id)}
             type="button"
             class="mt-4 flex w-full items-center justify-center rounded-sm bg-[#4ADE80] px-8 py-4"
           >
