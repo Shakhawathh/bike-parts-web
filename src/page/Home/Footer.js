@@ -10,7 +10,7 @@ const Footer = () => {
               <div>
                 <img
                   class="w-auto h-7"
-                  src="https://cdn.rareblocks.xyz/collection/celebration/images/logo-alt.svg"
+                  src="https://i.ibb.co/GnCnrfX/Logo-Makr-1r-Hewg.png"
                   alt=""
                 />
 

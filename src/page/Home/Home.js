@@ -11,7 +11,7 @@ import Review from "./Review";
 
 const Home = () => {
   return (
-    <div className="bg-white">
+    <div className="">
       <Banner></Banner>
       <Parts></Parts>
       <Business></Business>

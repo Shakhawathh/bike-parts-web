@@ -11,36 +11,38 @@ const Navbar2 = () => {
     signOut(auth);
     localStorage.removeItem("accessToken");
   };
+
   const navbarItems = (
     <>
       <Link
         to="/"
-        class="text-base font-semibold text-black transition-all duration-200 hover:text-opacity-80"
+        class="text-base font-semibold text-black transition-all duration-200 hover:text-opacity-80 hover:bottom-0  hover:border-b-[5px] hover:border-orange-500"
       >
         {" "}
         Home{" "}
       </Link>
       <a
-        href="#"
+        href="/Parts"
         title=""
-        class="text-base font-semibold text-black transition-all duration-200 hover:text-opacity-80"
+        class="text-base font-semibold text-black transition-all duration-200 hover:text-opacity-80 hover:bottom-0  hover:border-b-[5px] hover:border-orange-500"
       >
         {" "}
-        Service{" "}
+        Products{" "}
       </a>
       <a
         href="/blog"
         title=""
-        class="text-base font-semibold text-black transition-all duration-200 hover:text-opacity-80"
+        class="text-base font-semibold text-black transition-all duration-200 hover:text-opacity-80 hover:bottom-0  hover:border-b-[5px] hover:border-orange-500"
       >
         {" "}
         Blog{" "}
       </a>
+
       {user && (
         <a
           href="/Dashboard"
           title=""
-          class="text-base font-semibold text-black transition-all duration-200 hover:text-opacity-80"
+          class="text-base font-semibold text-black transition-all duration-200 hover:text-opacity-80 hover:bottom-0  hover:border-b-[5px] hover:border-orange-500"
         >
           {" "}
           Dashboard{" "}
@@ -53,7 +55,7 @@ const Navbar2 = () => {
           href="#"
           title=""
           onClick={logout}
-          class="inline-flex items-center justify-center px-5 py-2.5 text-base font-semibold text-black border-2 border-black hover:bg-black hover:text-white transition-all duration-200 focus:bg-black focus:text-white"
+          class="inline-flex items-center justify-center px-5 py-2.5 text-base font-semibold text-black border-2 border-black  hover:bg-orange-600 focus:bg-orange-500 hover:text-white transition-all duration-200  focus:text-white  hover:border-none"
         >
           {" "}
           Log out{" "}
@@ -62,7 +64,7 @@ const Navbar2 = () => {
         <a
           href="/login"
           title=""
-          class="inline-flex items-center justify-center px-5 py-2.5 text-base font-semibold text-black border-2 border-black hover:bg-black hover:text-white transition-all duration-200 focus:bg-black focus:text-white"
+          class="inline-flex items-center justify-center px-5 py-2.5 text-base font-semibold text-black border-2 border-black  hover:bg-orange-600 focus:bg-orange-500 hover:text-white transition-all duration-200  focus:text-white  hover:border-none"
         >
           {" "}
           Log in{" "}
@@ -76,10 +78,10 @@ const Navbar2 = () => {
         <div class="px-4 mx-auto sm:px-6 lg:px-8">
           <div class="flex items-center justify-between h-16 lg:h-20">
             <div class="flex-shrink-0">
-              <a href="#" title="" class="flex">
+              <a href="/" title="" class="flex">
                 <img
                   class=" w-auto h-8"
-                  src="https://cdn.rareblocks.xyz/collection/celebration/images/hero/2/logo.svg"
+                  src="https://i.ibb.co/GnCnrfX/Logo-Makr-1r-Hewg.png"
                   alt=""
                 />
               </a>

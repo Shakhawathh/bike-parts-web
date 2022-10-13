@@ -18,6 +18,7 @@ import MyProfile from "./page/Dashboard/MyProfile";
 import ManageProducts from "./page/Dashboard/ManageProducts";
 import MakeAdmin from "./page/Dashboard/MakeAdmin";
 import AddProduct from "./page/Dashboard/AddProduct";
+import Parts from "./page/Home/Parts";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Blog" element={<Blog />} />
+        <Route path="/Parts" element={<Parts />} />
         <Route
           path="Dashboard"
           element={

@@ -28,7 +28,7 @@ const PartsCard = ({ service }) => {
             name="add"
             onClick={() => navigateToPurchase(_id)}
             type="button"
-            class="mt-4 flex w-full items-center justify-center rounded-sm bg-[#4ADE80] px-8 py-4"
+            class="mt-4 flex w-full items-center justify-center rounded-sm bg-[#4ADE80] px-8 py-4  text-white transition-all duration-200 bg-orange-500 hover:bg-orange-600 focus:bg-orange-600"
           >
             <span class="text-sm font-medium"> Buy Now </span>
 

@@ -2,7 +2,7 @@ import React from "react";
 
 const Reply = () => {
   return (
-    <div className=" body-font relative">
+    <div name="contact" className=" body-font relative">
       <div class="absolute inset-0 bg-gray-300">
         <iframe
           width="100%"
@@ -51,7 +51,7 @@ const Reply = () => {
             </div>
 
             <div className="form-control mt-6">
-              <button className="btn bg-[#001858] text-white">
+              <button className="btn bg-[#001858]  0 text-white">
                 Leave a Comment
               </button>
             </div>

@@ -1,6 +1,16 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import CountUp from "react-countup";
 
 const Conected = () => {
+  const [counter, setCounter] = useState(0);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCounter((counter) => counter + 1);
+    }, 100000);
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
   return (
     <div>
       <section class="py-10 bg-white sm:py-16 lg:py-24">
@@ -9,14 +19,14 @@ const Conected = () => {
             <div>
               <img
                 class="w-full max-w-md mx-auto"
-                src="https://cdn.rareblocks.xyz/collection/celebration/images/integration/2/services-icons.png"
+                src="https://i.ibb.co/Thr5SqB/Virtual-Networking.png"
                 alt=""
               />
             </div>
 
             <div class="text-center lg:text-left">
               <h2 class="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
-                Grow business with connections.
+                Grow business with us.
               </h2>
               <p class="mt-6 text-base text-gray-600">
                 Amet minim mollit non deserunt ullamco est sit aliqua dolor do
@@ -24,15 +34,16 @@ const Conected = () => {
                 Exercitation veniam consequat sunt nostrud amet.
               </p>
 
-              <a
-                href="#"
+              <button
+                href=""
                 title=""
-                class="inline-flex items-center justify-center px-8 py-4 font-semibold text-white transition-all duration-200 bg-[#001858] rounded-md mt-9 hover:bg-blue-700 focus:bg-blue-700"
+                class="inline-flex items-center justify-center px-8 py-4 font-semibold text-white transition-all duration-200 rounded-md mt-9  text-white transition-all duration-200 bg-orange-500 hover:bg-orange-600 focus:bg-orange-600"
                 role="button"
               >
-                {" "}
-                Check all 1486 Business{" "}
-              </a>
+                Check all{" "}
+                <CountUp className="p-1" duration={5} start={0} end={1486} />
+                Business{" "}
+              </button>
             </div>
           </div>
         </div>
