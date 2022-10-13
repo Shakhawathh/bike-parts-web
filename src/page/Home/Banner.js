@@ -8,7 +8,7 @@ const Banner = () => {
         <div class="py-10 sm:py-16 lg:py-24">
           <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
             <div class="grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
-              <div>
+              <motion.div>
                 <h1 class="text-4xl font-bold text-black sm:text-6xl lg:text-7xl">
                   Find parts for, your
                   <br />
@@ -36,13 +36,13 @@ const Banner = () => {
                     Start exploring{" "}
                   </a>
                 </div>
-              </div>
+              </motion.div>
               <motion.div
-                initial={{ scale: 0 }}
-                animate={{ rotate: 0, scale: 1 }}
+                initial={{ x: 600 }}
+                animate={{ rotate: 0, scale: 1, x: -10 }}
                 transition={{
                   type: "spring",
-                  stiffness: 50,
+                  stiffness: 60,
                   damping: 20,
                 }}
               >
