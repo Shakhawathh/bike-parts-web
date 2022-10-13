@@ -3,6 +3,7 @@ import React from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { Link } from "react-router-dom";
 import auth from "../../firebase.init";
+import Sroll from "./Sroll";
 
 const Navbar2 = () => {
   const [user] = useAuthState(auth);
@@ -49,7 +50,7 @@ const Navbar2 = () => {
         </a>
       )}
 
-      <div class="w-px h-5 bg-black/20"></div>
+      <div class="w-px h-5 bg-black/80"></div>
       {user ? (
         <a
           href="#"
@@ -74,7 +75,8 @@ const Navbar2 = () => {
   );
   return (
     <div>
-      <header class="bg-gradient-to-b from-green-50 to-green-50">
+      <Sroll></Sroll>
+      <div class="bg-gradient-to-b from-green-50 to-green-50">
         <div class="px-4 mx-auto sm:px-6 lg:px-8">
           <div class="flex items-center justify-between h-16 lg:h-20">
             <div class="flex-shrink-0">
@@ -119,7 +121,7 @@ const Navbar2 = () => {
             </div>
           </div>
         </div>
-      </header>
+      </div>
     </div>
   );
 };
