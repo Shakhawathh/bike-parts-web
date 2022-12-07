@@ -10,7 +10,7 @@ const Purchase = () => {
 
   const onSubmit = (data) => {
     console.log(data);
-    fetch("https://young-beyond-90942.herokuapp.com/booking", {
+    fetch("https://bike-parts-web-server.onrender.com/booking", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -34,7 +34,7 @@ const Purchase = () => {
   const [user] = useAuthState(auth);
 
   useEffect(() => {
-    const url = `https://young-beyond-90942.herokuapp.com/service/${PartsCardId}`;
+    const url = `https://bike-parts-web-server.onrender.com/service/${PartsCardId}`;
 
     fetch(url)
       .then((res) => res.json())
@@ -73,7 +73,7 @@ const Purchase = () => {
               <span class="title-font font-medium text-4xl text-gray-900">
                 ${service.price}.<span className="text-lg "> Price</span>
               </span>
-              <button class="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-orange-600 rounded">
+              <button class="flex ml-auto text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-orange-600 rounded">
                 Order
               </button>
             </div>

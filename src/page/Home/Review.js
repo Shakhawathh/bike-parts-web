@@ -5,7 +5,7 @@ const Review = () => {
   const [services, setServices] = useState([]);
 
   useEffect(() => {
-    const url = `https://young-beyond-90942.herokuapp.com/review`;
+    const url = `https://bike-parts-web-server.onrender.com/review`;
     fetch(url, {
       method: "GET",
       headers: {

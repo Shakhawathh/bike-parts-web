@@ -1,14 +1,14 @@
 import { useEffect, useState } from "react";
 
-const useServices = () =>{
-    const [services, setServices] = useState([]);
+const useServices = () => {
+  const [services, setServices] = useState([]);
 
-    useEffect( ()=>{
-        fetch('https://young-beyond-90942.herokuapp.com/service')
-        .then(res => res.json())
-        .then(data => setServices(data));
-    }, []);
-    return [services, setServices]
-}
+  useEffect(() => {
+    fetch("https://bike-parts-web-server.onrender.com/service")
+      .then((res) => res.json())
+      .then((data) => setServices(data));
+  }, []);
+  return [services, setServices];
+};
 
 export default useServices;

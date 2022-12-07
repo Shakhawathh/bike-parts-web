@@ -9,7 +9,7 @@ const Parts = () => {
     isLoading,
     refetch,
   } = useQuery("services", () =>
-    fetch("https://young-beyond-90942.herokuapp.com/service").then((res) =>
+    fetch("https://bike-parts-web-server.onrender.com/service").then((res) =>
       res.json()
     )
   );

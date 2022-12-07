@@ -21,7 +21,7 @@ const Conected = () => {
               initial={{ x: -600 }}
               animate={{ rotate: 0, scale: 1, x: 10 }}
               transition={{
-                delay: 1,
+                delay: 2,
                 x: { duration: 1 },
                 default: { ease: "linear" },
               }}
